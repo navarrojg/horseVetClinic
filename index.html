@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+
+</head>
+
+<body>
+
+    <nav class="nav">
+
+        <button class="burger">
+            <i class="fas fa-bars">🐴</i>
+            <i class="fas fa-times hide">❌</i>
+        </button>
+
+        <div class="nav__items">
+            <a href="#home" class="nav__item">Home</a>
+            <a href="#aboutus" class="nav__item">About us</a>
+            <a href="#packages" class="nav__item">Packages</a>
+            <a href="#team" class="nav__item">Team</a>
+            <a href="#stats" class="nav__item">Stats</a>
+            <a href="#contact" class="nav__item">Contact</a>
+            <a href="#visit-us" class="nav__item">Visit us</a>
+        </div>
+    </nav>
+
+    <header class="header" id="home">
+        <h1 class="header__heading">Carolina's Horse Veterinary Clinic </h1>
+        <p class="header__text">We will help your horsy friend</p>
+        <a href="#team" class="header__btn btn-animation slice">Check our team</a>
+    </header>
+
+    <main class="main">
+        <section class="about-us section-padding" id="about-us">
+            <div class="wrapper">
+                <h2 class="section-heading">About us</h2>
+            </div>
+        </section>
+        <section id="packages" class="packages section-padding">
+            <div class="wrapper">
+                <h2 class="section-heading">Our packages</h2>
+
+                <div class="packages__cards">
+
+                    <div class="packages__card" onclick="void(0)">
+                        <div class="packages__card-img packages__card-img--first">
+                            <h3 class="packages__card-img-title">Package basic</h3>
+                            <p class="packages__card-img-info">↗ More information</p>
+                        </div>
+
+                        <div class="packages__card-info">
+                            <h3 class="packages__card-info-title">Package basic</h3>
+                            <ul class="packages__card-info-list">
+                                <li class="packages__card-info-list-item">Yearly medical check-in</li>
+                                <li class="packages__card-info-list-item">Teeth check-in</li>
+                                <li class="packages__card-info-list-item">Blood analysis</li>
+                                <li class="packages__card-info-list-item">One visit every second month for free</li>
+                            </ul>
+                            <button class="packages__card-info-btn btn-animation slice">
+                                select
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="packages__card" onclick="void(0)">
+                        <div class="packages__card-img packages__card-img--second">
+                            <h3 class="packages__card-img-title">Package premium</h3>
+                            <p class="packages__card-img-info">↗ More information</p>
+                        </div>
+
+                        <div class="packages__card-info">
+                            <h3 class="packages__card-info-title">Package premium</h3>
+                            <ul class="packages__card-info-list">
+                                <li class="packages__card-info-list-item">Half-yearly medical check-in</li>
+                                <li class="packages__card-info-list-item">Hooves check-in</li>
+                                <li class="packages__card-info-list-item">One visit every month for free</li>
+                                <li class="packages__card-info-list-item">Includes all benefits from basic package</li>
+                            </ul>
+                            <button class="packages__card-info-btn btn-animation slice">
+                                select
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="packages__card" onclick="void(0)">
+                        <div class="packages__card-img packages__card-img--third">
+                            <h3 class="packages__card-img-title">Package delux</h3>
+                            <p class="packages__card-img-info">↗ More information</p>
+                        </div>
+
+                        <div class="packages__card-info">
+                            <h3 class="packages__card-info-title">Package delux</h3>
+                            <ul class="packages__card-info-list">
+                                <li class="packages__card-info-list-item">Monthly medical check-in</li>
+                                <li class="packages__card-info-list-item">Surgical consultation</li>
+                                <li class="packages__card-info-list-item">Emergency hot line 24/7</li>
+                                <li class="packages__card-info-list-item">Behaviourist consultation</li>
+                            </ul>
+                            <button class="packages__card-info-btn btn-animation slice">
+                                select
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section id="team" class="team section-padding">
+            <div class="wrapper">
+                <h2 class="section-heading">Our Team</h2>
+
+                <div class="team__cards">
+
+                    <div class="team__card team__card-one">
+                        <img src="./img/vet1.jpg" alt="" class="team__card-img-top">
+                        <div class="team__card-body">
+                            <h5 class="team__card-body-tittle">Izabella Ramirez</h5>
+                            <p class="team__card-body-text">Best surgeon in North America. She can fix all
+                                injured bones and more. She
+                                looks forward to see new patients.</p>
+                        </div>
+                        <div class="team__card-footer">
+                            <p class="team__card-footer-phone"><span class="team__card-footer-icon">☎</span> +1 333 212
+                                123</p>
+                        </div>
+                    </div>
+                    <div class="team__card team__card-two">
+                        <img src="./img/vet2.jpg" alt="" class="team__card-img-top">
+                        <div class="team__card-body">
+                            <h5 class="team__card-body-tittle">Julia Gomez</h5>
+                            <p class="team__card-body-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Repudiandae, deserunt tenetur illo alias fugit consectetur.</p>
+                        </div>
+                        <div class="team__card-footer">
+                            <p class="team__card-footer-phone"><span class="team__card-footer-icon">☎</span> +1 456 212
+                                123</p>
+                        </div>
+                    </div>
+                    <div class="team__card team__card-three">
+                        <img src="./img/vet3.avif" alt="" class="team__card-img-top">
+                        <div class="team__card-body">
+                            <h5 class="team__card-body-tittle">Marta Fernandez</h5>
+                            <p class="team__card-body-text">No ones does better pedicure than Marta. You dont believe
+                                it? Visit us ASAP!</p>
+                        </div>
+                        <div class="team__card-footer">
+                            <p class="team__card-footer-phone"><span class="team__card-footer-icon">☎</span> +1 506 212
+                                123</p>
+                        </div>
+                    </div>
+                    <div class="team__card team__card-four">
+                        <img src="./img/vet4.jpeg" alt="" class="team__card-img-top">
+                        <div class="team__card-body">
+                            <h5 class="team__card-body-tittle">Carmen Gasol</h5>
+                            <p class="team__card-body-text">Painfull toothache? Carmen is waiting in her office for You.
+                                She is the best!
+                            </p>
+                        </div>
+                        <div class="team__card-footer">
+                            <p class="team__card-footer-phone"><span class="team__card-footer-icon">☎</span> +1 789 212
+                                123</p>
+                        </div>
+                    </div>
+                    <div class="team__card team__card-five">
+                        <img src="./img/vet5.jpg" alt="" class="team__card-img-top">
+                        <div class="team__card-body">
+                            <h5 class="team__card-body-tittle">Alejandra intern</h5>
+                            <p class="team__card-body-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Sunt eaque velit facere sint asperiores!</p>
+                        </div>
+                        <div class="team__card-footer">
+                            <p class="team__card-footer-phone"><span class="team__card-footer-icon">☎</span> +1 603 212
+                                123</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="stats section-padding" id="stats">
+            <div class="wrapper">
+                <h2 class="section-heading">Stats</h2>
+                <div class="counter__box">
+                    <div class="counter__box-item">
+                        <p class="counter__box-item-icon">🐎</p>
+                        <div class="counter__box-item-counter" data-number="823">0</div>
+                        <p class="counter__box-item-title">Cured patients</p>
+                    </div>
+                    <div class="counter__box-item">
+                        <p class="counter__box-item-icon">🩺</p>
+                        <div class="counter__box-item-counter" data-number="521">0</div>
+                        <p class="counter__box-item-title">Conducted operations</p>
+                    </div>
+                    <div class="counter__box-item">
+                        <p class="counter__box-item-icon">🧲</p>
+                        <div class="counter__box-item-counter" data-number="432">0</div>
+                        <p class="counter__box-item-title">Unguligrade horses</p>
+                    </div>
+                    <div class="counter__box-item">
+                        <p class="counter__box-item-icon">😎</p>
+                        <div class="counter__box-item-counter" data-number="801">0</div>
+                        <p class="counter__box-item-title">Satisfied clients</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="contact section-padding" id="contact">
+            <div class="wrapper">
+                <h2 class="section-heading heading-mb">Contact us</h2>
+                <form class="contact__form">
+                    <div class="contact__form-top">
+                        <label for="name" class="contact__form-label">Name and last name:</label>
+                        <input id='name' type="text" class="contact__form-input">
+                        <label for="email" class="contact__form-label">Email adress:</label>
+                        <input id='email' type="text" class="contact__form-input">
+                        <label for="category" class="contact__form-label">Preferred doctor:</label>
+                        <select id="category" class="contact__form-input">
+                            <option selected value="">None</option>
+                            <option value="">Izabella Ramirez</option>
+                            <option value="">Julia Gomez</option>
+                            <option value="">Marta Fernandez</option>
+                            <option value="">Carmen Gasol</option>
+                        </select>
+
+                        <div class="contact__form-top-checkbox-container">
+                            <label for="new-client" class="contact__form-label contact__form-top-label-checkbox">Are You
+                                our
+                                new Client?</label>
+                            <input type="checkbox" class="contact__form-top-checkbox">
+                        </div>
+
+                    </div>
+                    <label for="msg" class="contact__form-label-msg">Message:</label>
+                    <textarea id="msg" class="contact__form-textarea"></textarea>
+                    <button class="contact__form-btn btn-animation slice">send</button>
+
+                </form>
+
+            </div>
+        </section>
+
+        <section id="visit-us" class="visit-us section-padding">
+            <h2 class="section-heading heading-mb">visit us</h2>
+
+            <div class="visit-us__location-box">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15702.045948311395!2d-85.84836966416066!3d10.300888437124783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f9e39482a93f5c3%3A0xffa73dfd41fa8bae!2sTamarindo%20Diria!5e0!3m2!1sen!2suk!4v1685367646589!5m2!1sen!2suk"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+
+
+
+    </main>
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer__boxes">
+                <div class="footer__box">
+                    <h3 class="footer__box-title">CHVC CO.</h3>
+                    <p class="footer__box-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi,
+                        quos at consequuntur veritatis quisquam nobis?</p>
+                </div>
+                <div class="footer__box footer__box-desktop">
+                    <h3 class="footer__box-title">Packages</h3>
+                    <ul class="footer__box-list">
+                        <li class="footer__box-list-item"><a href="#">Package basic</a></li>
+                        <li class="footer__box-list-item"><a href="#">Package premium</a></li>
+                        <li class="footer__box-list-item"><a href="#">Package delux</a></li>
+                        <li class="footer__box-list-item"><a href="#">Package VIP</a></li>
+                    </ul>
+                    <a href="#"></a>
+                </div>
+                <div class="footer__box footer__box-desktop">
+                    <h3 class="footer__box-title">About Clinic</h3>
+                    <ul class="footer__box-list">
+                        <li class="footer__box-list-item"><a href="#">About us</a></li>
+                        <li class="footer__box-list-item"><a href="#">Management</a></li>
+                        <li class="footer__box-list-item"><a href="#">Career</a></li>
+                        <li class="footer__box-list-item"><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="footer__bottom-text">&copy;<span class="footer__year">2012</span> Carolina's Horse Veterinary
+            Clinic</p>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

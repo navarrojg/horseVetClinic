@@ -107,7 +107,7 @@ body {
 			rgba(156, 156, 12, 0.88),
 			rgba(42, 10, 184, 0.75)
 		),
-		url("./img/vetHero.jpg");
+		url("../img/vetHero.jpg");
 	background-size: cover;
 	background-position: center;
 	text-align: center;
@@ -181,15 +181,15 @@ body {
 			transition: transform 1s, opacity 1s;
 
 			&--first {
-				background-image: var(--gradient), url("./img/basic.jpg");
+				background-image: var(--gradient), url("../img/basic.jpg");
 			}
 
 			&--second {
-				background-image: var(--gradient), url("./img/delux.jpg");
+				background-image: var(--gradient), url("../img/delux.jpg");
 			}
 
 			&--third {
-				background-image: var(--gradient), url("./img/premium.png");
+				background-image: var(--gradient), url("../img/premium.png");
 			}
 
 			&-title {

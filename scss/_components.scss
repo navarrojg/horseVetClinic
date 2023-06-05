@@ -22,6 +22,11 @@
 	margin-bottom: 0.5em;
 }
 
+.break {
+	flex-basis: 100%;
+	height: 0;
+}
+
 //////////btn animation////////
 
 .btn-animation {
@@ -121,4 +126,10 @@
 	// .section-padding {
 	// 	padding: 10em 2em;
 	// }
+}
+
+@media (min-width: 1100px) {
+	.break {
+		display: none;
+	}
 }

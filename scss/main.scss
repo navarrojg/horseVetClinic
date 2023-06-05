@@ -415,13 +415,38 @@ body {
 .visit-us {
 	&__location-box {
 		display: flex;
+		flex-direction: column;
 		justify-content: center;
+		align-items: center;
 		margin-top: 2em;
 		width: 100%;
 	}
 
+	&__texts {
+		font-size: 2rem;
+		font-weight: bold;
+
+		&-p {
+			padding: 0.5em 0;
+		}
+
+		&-p:first-child {
+			margin-top: 1em;
+			padding: 0.5em 0;
+		}
+	}
+
 	iframe {
 		width: 100%;
+	}
+
+	&__img {
+		padding: 1em 0;
+	}
+
+	&-payments-text {
+		font-size: 2rem;
+		font-weight: 500;
 	}
 }
 
@@ -477,7 +502,6 @@ body {
 			perspective: 800px;
 		}
 	}
-
 }
 
 @media (min-width: 768px) {

@@ -27,6 +27,11 @@
   height: 0;
 }
 
+.hr {
+  margin-top: 2em;
+  width: 100%;
+}
+
 .btn-animation {
   position: relative;
   background: none;
@@ -461,12 +466,32 @@ body {
 
 .visit-us__location-box {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin-top: 2em;
   width: 100%;
 }
+.visit-us__texts {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.visit-us__texts-p {
+  padding: 0.5em 0;
+}
+.visit-us__texts-p:first-child {
+  margin-top: 1em;
+  padding: 0.5em 0;
+}
 .visit-us iframe {
   width: 100%;
+}
+.visit-us__img {
+  padding: 1em 0;
+}
+.visit-us-payments-text {
+  font-size: 2rem;
+  font-weight: 500;
 }
 
 .footer {

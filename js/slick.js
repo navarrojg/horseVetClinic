@@ -1,4 +1,3 @@
-
 $(".team-carousel").slick({
 	arrows: false,
 	autoplay: true,

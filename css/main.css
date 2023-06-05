@@ -361,21 +361,22 @@ body {
 }
 .team__card-img-top {
   height: 15em;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 .team__card-body {
-  height: 100%;
   background-color: #fff;
   text-align: center;
 }
 .team__card-body-tittle {
-  margin-top: 0.8em;
+  padding-top: 1em;
   text-transform: uppercase;
+  font-size: 2rem;
 }
 .team__card-body-text {
   padding: 0.5em 1.2em;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 .team__card-footer {
   position: relative;

@@ -294,45 +294,28 @@ body {
 			transform: scale(0.96);
 		}
 
-		// &-one {
-		// 	order: 5;
-		// 	// animation: card-one 20s linear infinite;
-		// 	// animation-direction: alternate;
-		// }
-		// &-two {
-		// 	order: 4;
-		// }
-		// &-three {
-		// 	order: 3;
-		// }
-		// &-four {
-		// 	order: 2;
-		// }
-		// &-five {
-		// 	order: 1;
-		// 	// animation: card-five 20s linear infinite;
-		// 	// animation-direction: alternate;
-		// }
-
 		&-img-top {
 			height: 15em;
+			width: 100%;
 			object-fit: cover;
 		}
 
 		&-body {
-			height: 100%;
+			// height: 100%;
 			background-color: #fff;
 			text-align: center;
 
 			&-tittle {
-				margin-top: 0.8em;
+				padding-top: 1em;
+				// margin-top: 0.8em;
 				text-transform: uppercase;
 				// padding: 0.5em 0;
+				font-size: 2rem;
 			}
 
 			&-text {
 				padding: 0.5em 1.2em;
-				font-size: 1.4rem;
+				font-size: 1.5rem;
 			}
 		}
 

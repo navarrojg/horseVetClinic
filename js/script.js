@@ -48,7 +48,7 @@ const handleNav = () => {
 const counterItems = document.querySelectorAll(".counter__box-item-counter");
 const counterBox = document.querySelector(".counter__box");
 const options = {
-	rootMargin: "-180px",
+	rootMargin: "-250px",
 };
 
 const startCounter = (entry) => {

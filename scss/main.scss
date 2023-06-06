@@ -413,16 +413,20 @@ body {
 
 /////////visit us////////////
 .visit-us {
+	&__box {
+		display: flex;
+	}
+
 	&__location-box {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		margin-top: 2em;
 		width: 100%;
 	}
 
 	&__texts {
+		margin-top: 2em;
 		font-size: 2rem;
 		font-weight: bold;
 
@@ -432,7 +436,6 @@ body {
 
 		&-p:first-child {
 			margin-top: 1em;
-			padding: 0.5em 0;
 		}
 	}
 
@@ -447,6 +450,12 @@ body {
 	&-payments-text {
 		font-size: 2rem;
 		font-weight: 500;
+	}
+
+	&__bottom {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 }
 

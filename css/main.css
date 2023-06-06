@@ -464,15 +464,18 @@ body {
   cursor: pointer;
 }
 
+.visit-us__box {
+  display: flex;
+}
 .visit-us__location-box {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 2em;
   width: 100%;
 }
 .visit-us__texts {
+  margin-top: 2em;
   font-size: 2rem;
   font-weight: bold;
 }
@@ -481,7 +484,6 @@ body {
 }
 .visit-us__texts-p:first-child {
   margin-top: 1em;
-  padding: 0.5em 0;
 }
 .visit-us iframe {
   width: 100%;
@@ -492,6 +494,11 @@ body {
 .visit-us-payments-text {
   font-size: 2rem;
   font-weight: 500;
+}
+.visit-us__bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer {

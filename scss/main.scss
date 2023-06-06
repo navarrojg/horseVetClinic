@@ -415,6 +415,7 @@ body {
 .visit-us {
 	&__box {
 		display: flex;
+		flex-direction: column;
 	}
 
 	&__location-box {
@@ -426,7 +427,12 @@ body {
 	}
 
 	&__texts {
-		margin-top: 2em;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		padding: 0 1em;
+		// margin-top: 2em;
 		font-size: 2rem;
 		font-weight: bold;
 
@@ -434,9 +440,9 @@ body {
 			padding: 0.5em 0;
 		}
 
-		&-p:first-child {
-			margin-top: 1em;
-		}
+		// &-p:first-child {
+		// 	margin-top: 1em;
+		// }
 	}
 
 	iframe {
@@ -445,6 +451,7 @@ body {
 
 	&__img {
 		padding: 1em 0;
+		width: 100%;
 	}
 
 	&-payments-text {
@@ -511,6 +518,12 @@ body {
 			perspective: 800px;
 		}
 	}
+
+	.visit-us {
+		&__img {
+			width: auto;
+		}
+	}
 }
 
 @media (min-width: 768px) {
@@ -539,7 +552,10 @@ body {
 	}
 
 	.visit-us {
-		iframe {
+		&__box {
+			flex-direction: row;
+		}
+		&__location-box {
 			width: 90%;
 		}
 	}
@@ -599,6 +615,12 @@ body {
 	.packages {
 		&__card {
 			width: 30%;
+		}
+	}
+
+	.visit-us {
+		&__location-box {
+			width: 70%;
 		}
 	}
 }

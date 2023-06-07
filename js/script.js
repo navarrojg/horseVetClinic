@@ -47,9 +47,18 @@ const handleNav = () => {
 ///counter
 const counterItems = document.querySelectorAll(".counter__box-item-counter");
 const counterBox = document.querySelector(".counter__box");
+
+const windowWidth = window.innerWidth;
 const options = {
-	rootMargin: "-250px",
+	threshold: windowWidth >= 528 ? 0.9 : 0.8,
 };
+
+// const options = {
+// 	rootMargin: windowWidth >= 528 ? "0px 0px -150px 0px" : "0px 0px -500px 0px",
+// };
+// const options = {
+// 	rootMargin: "-250px",
+// };
 
 const startCounter = (entry) => {
 	if (entry[0].isIntersecting) {

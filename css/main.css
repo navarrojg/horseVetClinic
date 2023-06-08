@@ -32,6 +32,17 @@
   width: 100%;
 }
 
+.modal-shadow {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.show {
+  display: block;
+}
+
 .btn-animation {
   position: relative;
   background: none;
@@ -147,6 +158,7 @@ html {
 }
 
 body {
+  position: relative;
   font-family: "Fira Sans", sans-serif;
   background-color: #fff;
   font-size: 1.6rem;
@@ -241,6 +253,66 @@ body {
   text-transform: uppercase;
   background-color: #fff;
   text-decoration: none;
+}
+
+.about-us {
+  background-color: var(--gray);
+}
+.about-us__section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.about-us__section-slider {
+  position: relative;
+  height: 400px;
+  width: 800px;
+  padding-top: 1em;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.about-us__section-slider-box {
+  display: flex;
+  transform: translateX(0);
+  transition: transform 0.5s;
+}
+.about-us__section-slider-box-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.about-us__section-slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 1em;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-size: 2rem;
+  border: none;
+  cursor: pointer;
+}
+.about-us__section-slider-btn-left {
+  left: 0;
+}
+.about-us__section-slider-btn-right {
+  right: 0;
+}
+.about-us__section-slider-btn span {
+  display: block;
+  transition: transform 0.3s;
+}
+.about-us__section-slider-btn:hover span {
+  transform: scale(0.7);
+}
+.about-us__section-text {
+  margin-top: 2em;
+  padding: 0 2em;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 1.5;
 }
 
 .packages__card {

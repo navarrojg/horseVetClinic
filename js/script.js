@@ -3,6 +3,7 @@ const barsIcon = document.querySelector(".fa-bars");
 const xIcon = document.querySelector(".fa-times");
 const nav = document.querySelector(".nav__items");
 const allNavItems = document.querySelectorAll(".nav__item");
+const modalShadow = document.querySelector(".modal-shadow");
 
 const footerYear = document.querySelector(".footer__year");
 
@@ -11,6 +12,7 @@ const handleNav = () => {
 	barsIcon.classList.toggle("hide");
 	xIcon.classList.toggle("hide");
 	burgerBtn.classList.toggle("active");
+	modalShadow.classList.toggle("show");
 
 	allNavItems.forEach((item) => {
 		item.addEventListener("click", () => {
@@ -18,31 +20,10 @@ const handleNav = () => {
 			burgerBtn.classList.remove("active");
 			barsIcon.classList.remove("hide");
 			xIcon.classList.add("hide");
+			modalShadow.classList.remove("show");
 		});
 	});
 };
-
-////////////////////////////
-// const x = 200
-// const cards = document.querySelectorAll('.team__card')
-// const card1 = document.querySelector('team__card-one')
-// const card2 = document.querySelector('team__card-two')
-// const card3 = document.querySelector('team__card-three')
-// const card4 = document.querySelector('team__card-four')
-// const card5 = document.querySelector('team__card-five')
-
-// const karuzela = () => {
-// 	cards.forEach(card => {
-// 		card.style.transform = 'translateX(200px)'
-// 	})
-// }
-
-// const handleOrder = () => {
-// 	car
-// }
-
-// let interval = setInterval(karuzela, 1000)
-///////////////////////
 
 ///counter
 const counterItems = document.querySelectorAll(".counter__box-item-counter");
@@ -91,4 +72,53 @@ handleCurrentYear();
 const observer = new IntersectionObserver(startCounter, options);
 observer.observe(counterBox);
 
+/////slider
+const sliderBox = document.querySelector(".about-us__section-slider-box");
+const leftBtn = document.querySelector(".about-us__section-slider-btn-left");
+const rightBtn = document.querySelector(".about-us__section-slider-btn-right");
+const carouselIamges = document.querySelectorAll(
+	".about-us__section-slider-box-img"
+);
+const carouselWidth = 300;
+const carouselSpeed = 4000;
+let index = 0;
+
+const handleCarousel = () => {
+	index++;
+	changeImage();
+};
+
+let startCarousel = setInterval(handleCarousel, carouselSpeed);
+
+const changeImage = () => {
+	if (index > carouselIamges.length - 1) {
+		index = 0;
+	} else if (index < 0) {
+		index = carouselIamges.length - 1;
+	}
+
+	sliderBox.style.transform = `translateX(${-index * carouselWidth}px)`;
+};
+
+const handleRightBtn = () => {
+	index++;
+	resetInterval();
+};
+const handleLeftBtn = () => {
+	index--;
+	resetInterval();
+};
+
+const resetInterval = () => {
+	changeImage();
+	clearInterval(startCarousel);
+	startCarousel = setInterval(handleCarousel, carouselSpeed);
+};
+
+rightBtn.addEventListener("click", handleRightBtn);
+leftBtn.addEventListener("click", handleLeftBtn);
+
 burgerBtn.addEventListener("click", handleNav);
+window.addEventListener("click", (e) =>
+	e.target === modalShadow ? handleNav() : false
+);

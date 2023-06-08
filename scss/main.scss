@@ -26,6 +26,7 @@ html {
 }
 
 body {
+	position: relative;
 	font-family: "Fira Sans", sans-serif;
 	background-color: #fff;
 	font-size: 1.6rem;
@@ -150,6 +151,75 @@ body {
 	// }
 }
 //////////////////main
+//about-us
+
+.about-us {
+	background-color: var(--gray);
+	&__section {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	&__section-slider {
+		position: relative;
+		height: 400px;
+		width: 800px;
+		padding-top: 1em;
+		border-radius: 6px;
+		overflow: hidden;
+
+		&-box {
+			display: flex;
+			transform: translateX(0);
+			transition: transform 0.5s;
+
+			&-img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+
+		&-btn {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			padding: 1em;
+			color: #fff;
+			background-color: rgba(0, 0, 0, 0.4);
+			font-size: 2rem;
+			border: none;
+			cursor: pointer;
+		}
+
+		&-btn-left {
+			left: 0;
+		}
+
+		&-btn-right {
+			right: 0;
+		}
+
+		&-btn span {
+			display: block;
+			transition: transform 0.3s;
+		}
+
+		&-btn:hover span {
+			transform: scale(0.7);
+		}
+	}
+
+	&__section-text {
+		margin-top: 2em;
+		padding: 0 2em;
+		text-align: center;
+		font-size: 2rem;
+		line-height: 1.5;
+	}
+}
 
 ///////////////packages
 

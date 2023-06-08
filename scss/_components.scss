@@ -32,6 +32,17 @@
 	width: 100%;
 }
 
+.modal-shadow {
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.show {
+	display: block;
+}
+
 //////////btn animation////////
 
 .btn-animation {

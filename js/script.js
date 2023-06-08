@@ -79,7 +79,7 @@ const rightBtn = document.querySelector(".about-us__section-slider-btn-right");
 const carouselIamges = document.querySelectorAll(
 	".about-us__section-slider-box-img"
 );
-const carouselWidth = 300;
+let carouselWidth;
 const carouselSpeed = 4000;
 let index = 0;
 
@@ -97,9 +97,20 @@ const changeImage = () => {
 		index = carouselIamges.length - 1;
 	}
 
-	sliderBox.style.transform = `translateX(${-index * carouselWidth}px)`;
+	if (windowWidth <= 576) {
+		carouselWidth = 300;
+		sliderBox.style.transform = `translateX(${-index * carouselWidth}px)`;
+	} else if ((windowWidth >= 576) & (windowWidth < 768)) {
+		carouselWidth = 500;
+		sliderBox.style.transform = `translateX(${-index * carouselWidth}px)`;
+	} else if ((windowWidth >= 768) & (windowWidth < 992)) {
+		carouselWidth = 700;
+		sliderBox.style.transform = `translateX(${-index * carouselWidth}px)`;
+	} else if (windowWidth >= 992) {
+		carouselWidth = 800;
+		sliderBox.style.transform = `translateX(${-index * carouselWidth}px)`;
+	}
 };
-
 const handleRightBtn = () => {
 	index++;
 	resetInterval();

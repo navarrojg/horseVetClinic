@@ -164,8 +164,8 @@ body {
 
 	&__section-slider {
 		position: relative;
-		height: 400px;
-		width: 800px;
+		height: 180px;
+		width: 300px;
 		padding-top: 1em;
 		border-radius: 6px;
 		overflow: hidden;
@@ -186,7 +186,7 @@ body {
 			position: absolute;
 			top: 50%;
 			transform: translateY(-50%);
-			padding: 1em;
+			padding: 0.6em;
 			color: #fff;
 			background-color: rgba(0, 0, 0, 0.4);
 			font-size: 2rem;
@@ -213,10 +213,10 @@ body {
 	}
 
 	&__section-text {
-		margin-top: 2em;
-		padding: 0 2em;
+		margin-top: 1em;
+		padding: 0 0.5em;
 		text-align: center;
-		font-size: 2rem;
+		font-size: 1.6rem;
 		line-height: 1.5;
 	}
 }
@@ -584,6 +584,21 @@ body {
 		}
 	}
 
+	.about-us {
+		&__section-slider {
+			height: 300px;
+			width: 500px;
+
+			&-btn {
+				padding: 1em;
+			}
+		}
+
+		&__section-text {
+			padding: 0 1em;
+		}
+	}
+
 	.packages {
 		&__card {
 			perspective: 800px;
@@ -605,6 +620,13 @@ body {
 
 		&__text {
 			font-size: 3.5rem;
+		}
+	}
+
+	.about-us {
+		&__section-slider {
+			height: 350px;
+			width: 700px;
 		}
 	}
 
@@ -678,6 +700,17 @@ body {
 	.nav {
 		&__item {
 			font-size: 3rem;
+		}
+	}
+	.about-us {
+		&__section-slider {
+			height: 400px;
+			width: 800px;
+		}
+
+		&__section-text {
+			padding: 0 2em;
+			font-size: 2rem;
 		}
 	}
 }

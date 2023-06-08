@@ -266,8 +266,8 @@ body {
 }
 .about-us__section-slider {
   position: relative;
-  height: 400px;
-  width: 800px;
+  height: 180px;
+  width: 300px;
   padding-top: 1em;
   border-radius: 6px;
   overflow: hidden;
@@ -287,7 +287,7 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  padding: 1em;
+  padding: 0.6em;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.4);
   font-size: 2rem;
@@ -308,10 +308,10 @@ body {
   transform: scale(0.7);
 }
 .about-us__section-text {
-  margin-top: 2em;
-  padding: 0 2em;
+  margin-top: 1em;
+  padding: 0 0.5em;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.6rem;
   line-height: 1.5;
 }
 
@@ -610,6 +610,16 @@ body {
   .header__text {
     font-size: 2.5rem;
   }
+  .about-us__section-slider {
+    height: 300px;
+    width: 500px;
+  }
+  .about-us__section-slider-btn {
+    padding: 1em;
+  }
+  .about-us__section-text {
+    padding: 0 1em;
+  }
   .packages__card {
     perspective: 800px;
   }
@@ -623,6 +633,10 @@ body {
   }
   .header__text {
     font-size: 3.5rem;
+  }
+  .about-us__section-slider {
+    height: 350px;
+    width: 700px;
   }
   .packages__cards {
     display: flex;
@@ -675,6 +689,14 @@ body {
 @media (min-width: 992px) {
   .nav__item {
     font-size: 3rem;
+  }
+  .about-us__section-slider {
+    height: 400px;
+    width: 800px;
+  }
+  .about-us__section-text {
+    padding: 0 2em;
+    font-size: 2rem;
   }
 }
 @media (min-width: 1100px) {

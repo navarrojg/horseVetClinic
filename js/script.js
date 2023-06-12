@@ -126,6 +126,26 @@ const resetInterval = () => {
 	startCarousel = setInterval(handleCarousel, carouselSpeed);
 };
 
+////button to top
+const btnScroll = document.querySelector(".scroll-to-top");
+
+const handleScroll = () => {
+	const scroll = window.scrollY;
+
+	if (scroll > 2000) {
+		btnScroll.classList.add("scroll-to-top-active");
+	} else {
+		btnScroll.classList.remove("scroll-to-top-active");
+	}
+};
+
+const scrollToTop = () => {
+	window.scroll({
+		top: 0,
+		behavior: "smooth",
+	});
+};
+
 rightBtn.addEventListener("click", handleRightBtn);
 leftBtn.addEventListener("click", handleLeftBtn);
 
@@ -133,3 +153,6 @@ burgerBtn.addEventListener("click", handleNav);
 window.addEventListener("click", (e) =>
 	e.target === modalShadow ? handleNav() : false
 );
+
+window.addEventListener("scroll", handleScroll);
+btnScroll.addEventListener("click", scrollToTop);

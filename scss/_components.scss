@@ -43,6 +43,29 @@
 	display: block;
 }
 
+///// btn scroll to top
+.scroll-to-top {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 10px;
+	padding: 0.2em;
+	background-color: transparent;
+	font-size: 3rem;
+	border: none;
+	cursor: pointer;
+	z-index: 10;
+	transition: transform 0.3s;
+}
+
+.scroll-to-top:hover {
+	transform: scale(1.2);
+}
+
+.scroll-to-top-active {
+	display: block;
+}
+
 //////////btn animation////////
 
 .btn-animation {
@@ -123,6 +146,13 @@
 }
 
 ////////MEDIA////////////
+
+@media (min-width: 576px) {
+	.scroll-to-top {
+		bottom: 50px;
+		right: 20px;
+	}
+}
 
 @media (min-width: 768px) {
 	.section-heading {

@@ -65,6 +65,50 @@
   display: block;
 }
 
+.hide {
+  display: none;
+}
+
+.cookie-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0;
+  padding: 2em;
+  width: 100%;
+  font-size: 2rem;
+  background-color: var(--secondColor);
+  color: #fff;
+  opacity: 0;
+  transform: translateY(100%);
+  animation: show-cookies 0.5s 0.5s forwards;
+  z-index: 11;
+}
+
+.cookie-btn {
+  margin-top: 1em;
+  padding: 0.5em 1em;
+  font-size: 1.6rem;
+  border: 5px solid;
+  border-radius: 10px;
+  color: #fff;
+  background-color: var(--secondColor);
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.cookie-btn:hover {
+  background-color: rgb(134, 134, 8);
+}
+
+@keyframes show-cookies {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .btn-animation {
   position: relative;
   background: none;

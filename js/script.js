@@ -146,6 +146,23 @@ const scrollToTop = () => {
 	});
 };
 
+///cookie-box
+const cookieBox = document.querySelector(".cookie-box");
+const cookieBtn = document.querySelector(".cookie-btn");
+
+const showCookie = () => {
+	const cookieEaten = localStorage.getItem("cookie");
+
+	if (cookieEaten) {
+		cookieBox.classList.add("hide");
+	}
+};
+
+const handleCookieBox = () => {
+	localStorage.setItem("cookie", "true");
+	cookieBox.classList.add("hide");
+};
+
 rightBtn.addEventListener("click", handleRightBtn);
 leftBtn.addEventListener("click", handleLeftBtn);
 
@@ -156,3 +173,6 @@ window.addEventListener("click", (e) =>
 
 window.addEventListener("scroll", handleScroll);
 btnScroll.addEventListener("click", scrollToTop);
+
+showCookie();
+cookieBtn.addEventListener("click", handleCookieBox);

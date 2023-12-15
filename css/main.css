@@ -189,6 +189,9 @@
     bottom: 50px;
     right: 20px;
   }
+  .cookie-box {
+    height: 25vh;
+  }
 }
 @media (min-width: 768px) {
   .section-heading {
@@ -295,9 +298,10 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(79deg, rgba(156, 156, 12, 0.88), rgba(42, 10, 184, 0.75)), url("../img/vetHero.jpg");
+  background-image: linear-gradient(79deg, rgba(156, 156, 12, 0.88), rgba(42, 10, 184, 0.75)), url("../img/caro.png");
   background-size: cover;
   background-position: center;
+  background-position-y: 25%;
   text-align: center;
   width: 100%;
   height: 75vh;
@@ -339,7 +343,7 @@ body {
 .about-us__section-slider {
   position: relative;
   height: 180px;
-  width: 300px;
+  width: 250px;
   padding-top: 1em;
   border-radius: 6px;
   overflow: hidden;

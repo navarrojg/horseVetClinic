@@ -98,7 +98,7 @@ const changeImage = () => {
 	}
 
 	if (windowWidth <= 576) {
-		carouselWidth = 300;
+		carouselWidth = 250;
 		sliderBox.style.transform = `translateX(${-index * carouselWidth}px)`;
 	} else if ((windowWidth >= 576) & (windowWidth < 768)) {
 		carouselWidth = 500;

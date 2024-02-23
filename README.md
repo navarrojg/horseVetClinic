@@ -1,3 +1,5 @@
+![center](https://github.com/navarrojg/horseVetClinic/assets/115883736/9396ce24-8c05-408c-95e8-f93e15bc3b19)
+
 <h3 align="center">Carolina's Horse Veterinary Clinic</h3>
 
 <p align="left">

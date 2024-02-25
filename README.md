@@ -3,7 +3,8 @@
 <h3 align="center">Carolina's Horse Veterinary Clinic</h3>
 
 <p align="left">
-  Website for horse veterinary clinic! Website is devided for eight secions:
+  Website for horse veterinary clinic! 
+  Website has been created in mobile first design scheme. Website is devided for eight secions:
 
   - Header,
 
